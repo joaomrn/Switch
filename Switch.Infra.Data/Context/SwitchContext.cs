@@ -29,6 +29,10 @@ namespace Switch.Infra.Data.Context
             modelBuilder.ApplyConfiguration(new PostagemConfiguration());
             modelBuilder.ApplyConfiguration(new GrupoConfiguration());
             modelBuilder.ApplyConfiguration(new UsuarioGrupoConfiguration());
+            modelBuilder.ApplyConfiguration(new AmigoConfiguration());
+            modelBuilder.ApplyConfiguration(new ComentarioConfiguration());
+            modelBuilder.ApplyConfiguration(new StatusRelacionamentoConfiguration());
+            modelBuilder.ApplyConfiguration(new ProcurandoPorConfiguration());
             base.OnModelCreating(modelBuilder);
         }
     }
