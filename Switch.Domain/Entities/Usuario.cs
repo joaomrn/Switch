@@ -22,6 +22,7 @@ namespace Switch.Domain.Entities
         public virtual ICollection<LocalTrabalho> LocaisTrabalho { get; set; }
         public virtual ICollection<InstituicaoEnsino> InstituicoesEnsino { get; set; }
         public virtual ICollection<Amigo> Amigos { get; set; }
+        public virtual ICollection<Comentario> Comentarios { get; set; }
 
         public Usuario()
         {
@@ -30,6 +31,7 @@ namespace Switch.Domain.Entities
             LocaisTrabalho = new List<LocalTrabalho>();
             InstituicoesEnsino = new List<InstituicaoEnsino>();
             Amigos = new List<Amigo>();
+            Comentarios = new List<Comentario>();
         }
     }
 }
