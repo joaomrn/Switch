@@ -11,9 +11,9 @@ namespace Switch.Infra.Data.Config
     {
         public void Configure(EntityTypeBuilder<Postagem> builder)
         {
-            builder.HasKey(u => u.Id);
-            builder.Property(u => u.DataPublicacao).IsRequired();
-            builder.Property(u => u.Texto).HasMaxLength(400).IsRequired();
+            builder.HasKey(p => p.Id);
+            builder.Property(p => p.DataPublicacao).IsRequired();
+            builder.Property(p => p.Texto).HasMaxLength(400).IsRequired();
         }
     }
 }
